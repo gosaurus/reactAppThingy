@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import List from "./components/List.jsx";
 
 function App() {
   const [value, setValue] = useState("");
@@ -21,10 +22,6 @@ function App() {
     console.log("Length =", todos.length)
  };
 
-const listItems = todos.map((todo, index) => (
-    <li key={index}>{todo}</li>
-));
-
   return (
     <>
       <div>
@@ -36,9 +33,7 @@ const listItems = todos.map((todo, index) => (
         <button type="submit">Submit
         </button>
       </form>
-      {
-       (todos.length > 0) && (<ul> {listItems} </ul>)
-      }
+      <List todos={todos} />
       </div>
     </>
   )
