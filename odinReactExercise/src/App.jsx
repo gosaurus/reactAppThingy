@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import List from "./components/List.jsx";
+import Gallery from "./components/Gallery.jsx";
 
 function App() {
   const [value, setValue] = useState("");
@@ -25,7 +26,7 @@ function App() {
   return (
     <>
       <div>
-      <h1>To-do list</h1>
+      {/* <h1>To-do list</h1>
       <p>No-other-components version.</p>
     <form onSubmit={handleSubmit}>
     <label htmlFor="value">Next on your to do list: </label>
@@ -33,10 +34,11 @@ function App() {
         <button type="submit">Submit
         </button>
       </form>
-      <List todos={todos} />
+      <List todos={todos} /> */}
+      <Gallery />
       </div>
     </>
   )
 }
 
-export default App
+export default App;

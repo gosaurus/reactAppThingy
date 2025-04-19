@@ -5,3 +5,10 @@ export function getImageUrl(person) {
         "s.jpg"
     );
 }
+
+export function getScultureImageUrl(sculpture) {
+    return (
+        sculpture.url
+
+    );
+}
